@@ -1,14 +1,16 @@
-
+'use client'
+import SellItemContainer from "../../components/SellItemContainer";
 
 export default function ListPage() {
     let name = 'park';
-  
+    let datas = ['a','b','c','d'];
+    
     return (
       <div>
         <h2>list페이지</h2>
-        <a></a>
+        <div>
+          { <SellItemContainer datas={datas}/> }
+        </div>
       </div>
     )
   }
-  
-  
