@@ -7,7 +7,7 @@ export default function ListPage() {
     
     return (
       <div>
-        <h2>list페이지</h2>
+        <h2>list페이지1</h2>
         <div>
           { <SellItemContainer datas={datas}/> }
         </div>
