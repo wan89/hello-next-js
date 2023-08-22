@@ -3,7 +3,7 @@ import { useRecoilState} from 'recoil';
 import { mouseValue } from '../store';
 
 
-export const useMouseEvent = (picValue:number) => {
+export const useImageMouseEvent = (picValue:number) => {
     const [ mouseIsDownMode, setMouseIsDownMode ] = useState(false);
     const [ mousePoint, setMousePoint ] = useState({x:0,y:0});
     const [ mouseValues, setMouseValue ] = useRecoilState(mouseValue);

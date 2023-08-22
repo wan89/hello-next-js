@@ -4,5 +4,5 @@
 export interface IRoutesType {
     path: string,
     name_kr: string,
-    child?: Array<IRoutesType> | null
+    childs?: Array<IRoutesType> | null
 }

@@ -1,0 +1,30 @@
+$prefix:'grid-drag';
+
+
+.content{
+  width: 100%;
+  position: relative;
+  background: #eee;
+  height: 100%;
+}
+
+.#{$prefix}-draggable{
+  padding: 20px 0;
+  margin: 5px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  background: (255,255,255,0.2);
+  position: absolute;
+  justify-content: center;
+  transition: all 600ms ease;
+}
+
+.clearfix:after{
+  display:block;
+  clear:both;
+  content:"";
+  visibility:hidden; 
+  height:0;
+} 
+.clearfix{zoom:1}

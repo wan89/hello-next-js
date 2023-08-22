@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { styled } from "styled-components";
 // data
-import { Routes } from "@/data";
+import { AppRoutes } from "@/data";
 import { IRoutesType } from "@/types/layoutTypes";
 //component
 import NaviItem from "@/components/main/NaviItem";
@@ -14,8 +14,10 @@ export default function Header() {
     const NaviContainer = styled.ul `
         display: flex;
         list-style: none;
+        margin: 0; padding: 0;
+        
+
         & > li { margin: 10px; }
-        & a { text-decoration:none; color: black; }
     `;
     
     return (
@@ -23,7 +25,7 @@ export default function Header() {
             <div className="contents-wrapper">
                 <NaviContainer>
                     {
-                        Routes.map((route:IRoutesType,index)=>(
+                        AppRoutes.map((route:IRoutesType, index)=>(
                             <NaviItem 
                                 route={route}
                                 isCurrent={currentPathName == route.path}
@@ -31,7 +33,6 @@ export default function Header() {
                                 />
                         ))
                     }
-                    
                 </NaviContainer>
             </div>
         </header>
