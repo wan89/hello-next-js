@@ -1,12 +1,12 @@
+'use client';
 
-
+// import Api from '@apis'
 export default function a() {
-    let name = 'a';
   
+
     return (
       <div>
-        <h2>aaa</h2>
-        <a></a>
+        <h2>여기는 /list/a 입니다</h2>
       </div>
     )
   }
